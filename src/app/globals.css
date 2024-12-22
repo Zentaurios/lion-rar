@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --primary-color: #ff4500;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: 'Caveat', cursive;
+  font-weight: 600;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+.bold-text {
+  font-weight: 700;
+}
+
+.lion-emoji {
+  position: fixed;
+  top: -50px;
+  font-size: 2rem;
+  animation: fall linear infinite;
+  z-index: 0;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(100vh);
+  }
+}
+
+.main-content {
+  position: relative;
+  z-index: 1;
+}
+
+.semi-transparent-bg {
+  background-color: rgba(242, 242, 242, 0.8);
+}
+
+@media (prefers-color-scheme: dark) {
+  .semi-transparent-bg {
+    background-color: rgba(26, 26, 26, 0.8);
+  }
+}
