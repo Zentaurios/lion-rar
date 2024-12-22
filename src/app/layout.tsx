@@ -13,19 +13,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        <link rel="icon" href="/favicon.ico" />
-        <meta property="tags" content="lion, rar, viral, meng, lion rar, memecoin" />
-        <meta property="og:title" content="Lion Rar - The Viral Roar" />
-        <meta property="og:description" content="Join the viral sensation of Lion Rar!" />
-        <meta property="og:image" content="/lion-rar-logo.png" />
-        <meta property="og:url" content="https://yourwebsite.com" />
-        <meta property="og:type" content="website" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Lion Rar - The Viral Roar" />
-        <meta name="twitter:description" content="Join the viral sensation of Lion Rar!" />
-        <meta name="twitter:image" content="/lion-rar-logo.png" />
-      </head>
       <body className="antialiased">
         {children}
       </body>
